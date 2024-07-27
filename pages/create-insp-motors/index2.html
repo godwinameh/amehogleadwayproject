@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Inspection Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/pages/create-insp-form-preloss/css/create-insp-form-preloss.css" />
+    <style>
+      /* Add this to your CSS file */
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+      }
+
+      .sidebar {
+        transition: transform 0.3s ease;
+      }
+
+      .inner-sidebar {
+        transition: transform 0.3s ease;
+      }
+
+      @media (max-width: 768px) {
+        .hamburger {
+          display: block;
+        }
+
+        .sidebar {
+          transform: translateX(-100%);
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 250px;
+          background: #333;
+          z-index: 1000;
+        }
+
+        .sidebar.open {
+          transform: translateX(0);
+        }
+
+        .inner-sidebar {
+          transform: translateX(-100%);
+        }
+
+        .inner-sidebar.open {
+          transform: translateX(0);
+        }
+      }
+
+      .nav-logo {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-logo {
+                display: block;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="nav-icons">
+        <div class="icon-nav">
+          <img
+            src="/pages/create-insp-motors/assets/images/icon1.svg"
+            alt=""
+            class="side-icons"
+          />
+        </div>
+        <div class="icon-nav">
+          <img
+            src="/pages/create-insp-motors/assets/images/icon2.svg"
+            alt=""
+            class="side-icons"
+          />
+        </div>
+        <div class="icon-nav">
+          <img
+            src="/pages/create-insp-motors/assets/images/icon3.svg"
+            alt=""
+            class="side-icons"
+          />
+        </div>
+        <div class="icon-nav">
+          <img
+            src="/pages/create-insp-motors/assets/images/icon4.svg"
+            alt=""
+            class="side-icons"
+          />
+        </div>
+        <div class="icon-nav">
+          <img
+            src="/pages/create-insp-motors/assets/images/icon5.svg"
+            alt=""
+            class="side-icons"
+          />
+        </div>
+        <div class="icon-nav">
+          <img
+            src="/pages/create-insp-motors/assets/images/icon6.svg"
+            alt=""
+            class="side-icons"
+          />
+        </div>
+      </div>
+      <div class="inner-sidebar">
+        <div class="logo">
+          <img
+            src="/pages/create-insp-motors/assets/images/logo.svg"
+            alt="Leadway Assurance"
+          />
+        </div>
+        <h2 class="trm">TRM</h2>
+        <ul>
+          <li>
+            <a href="" id="overview-btn">
+              <img
+                src="/pages/create-insp-motors/assets/images/overview.svg"
+                alt=""
+              />Overview</a
+            >
+          </li>
+          <li>
+            <a href="" id="request-btn">
+              <img
+                src="/pages/create-insp-motors/assets/images/request.svg"
+                alt=""
+              />Request</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="top-nav">
+        <div>
+          <img src="/pages/create-insp-motors/assets/images/logo.svg" alt="Leadway Assurance" style="position: relative; right: -5px;" class="nav-logo"/>
+          <img src="/pages/create-insp-motors/assets/images/bell.svg" class="bell" alt="" />
+          <div class="avatar">
+            <h2>AM</h2>
+          </div>
+          <div class="account-info">
+            <p>Adesola</p>
+            <img
+              src="/pages/create-insp-motors/assets/images/arrow.svg"
+              class="arrow"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <img src="/pages/Assets/menu.svg" alt="">
+        </div>
+      </div>
+      <header>
+        <div class="head-span">
+          <h1 class="head-welcome">Create New Inspection</h1>
+          <p class="txt-para">See inspection accross all business classes</p>
+        </div>
+        <a href="/pages/create-inspection2.html"> <i class="bi bi-chevron-compact-left"></i>Back to create request</a>
+      </header>
+
+      <div class="main-container">
+        <!-- the form content div -->
+        <div class="container">
+          <h2>Post-Loss Link-Generation(Optional)</h2>
+          <hr />
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="policyNumber">Policy Number (optional)</label>
+                <div class="input-icon">
+                  <input type="text" id="policyNumber" placeholder="Search" />
+                  <img
+                    src="/pages/create-insp-motors/assets/images/search.svg"
+                    alt="Search Icon"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="claimNumber">Claim Number</label>
+                <div class="input-icon">
+                  <input type="text" id="claimNumber" placeholder="Search" />
+                  <img
+                    src="/pages/create-insp-motors/assets/images/search.svg"
+                    alt="Search Icon"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+
+                
+                </div>
+              </div>
+              <div 
+            
+            </div>
+            <hr />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Contact First Name</label>
+                <input type="text" id="firstName" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Contact Last Name</label>
+                <input type="text" id="lastName" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phoneNumber">Contact Phone Number</label>
+                <div class="custom-select">
+                  <div class="select-selected">
+                    +234
+                    <div class="select-arrow"></div>
+                  </div>
+                  <div class="select-items select-hide">
+                    <div class="select-item" data-value="+234">+234</div>
+                    <div class="select-item" data-value="+1">+1</div>
+                    <div class="select-item" data-value="+44">+44</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Contact Email Address</label>
+                <input type="email" id="email" />
+              </div>
+            </div>
+            <hr />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="houseNumber">Vehicle make</label>
+                <input type="text" id="houseNumber" placeholder="select a make"/>
+              </div>
+              <div class="form-group">
+                <label for="riskAddress">Vehicle modal</label>
+                <input type="text" id="riskAddress" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="state">Registration Number</label>
+                <div class="custom-select">
+                  <div class="select-selected">
+                    
+                    <div class="select-arrow"></div>
+                  </div>
+                  <div class="select-items select-hide">
+                    <div class="select-item" data-value="english">English</div>
+                    <div class="select-item" data-value="french">French</div>
+                    <div class="select-item" data-value="spanish">Spanish</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lga">Year</label>
+                <div class="custom-select">
+                  <div class="select-selected">
+                    Select a year
+                    <div class="select-arrow"></div>
+                  </div>
+                  <div class="select-items select-hide">
+                    <div class="select-item" data-value="english">2022</div>
+                    <div class="select-item" data-value="french">2023</div>
+                    <div class="select-item" data-value="spanish">2023</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="form-group">
+              <label for="remarks">Comment</label>
+            <textarea id="remarks" rows="4"  placeholder=""></textarea>
+          </div>
+          <div class="form-buttons">
+            <div><button class="attachment" type="file">Attach document</button></div>
+           <div class="btn-gen" id="generate-btn"> <button type="submit" class="generate-btn">Generate</button></div>
+          </div>
+          </div>
+          
+          </form>
+        </div>
+        <!-- end of the form content div -->
+      </div>
+    </div>
+       <!-- Modal Structure -->
+       <div id="confirmation-modal" class="inspection-modal" on>
+        <div class="inspection-modal-content">
+            <h3>Send to TRM</h3>
+            <p>Are you sure you want to send this request?</p>
+            <div>
+                <button id="close-modal">cancel</button>
+                <button id="send-request-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- Second Modal Structure -->
+    <div id="success-modal" class="inspection-modal">
+        <div class="success-modal-content">
+            <img
+                src="/pages/Group 383.jpg"
+                alt="icon"
+                class="hand-image"
+            />
+            <button class="cancel-success">
+                <img
+                    src="/pages/Vector.svg"
+                    alt="icon"
+                />
+            </button>
+            <p>
+                You've successfully created new Inspection ID-23321 for
+                PRIME GARDENS
+            </p>
+            <div>
+                <button class="requests-link" id="requests-links">
+                    Go to Request List
+                </button>
+                <button class="create-new" id="create-new">
+                    Create New Inspection
+                </button>
+            </div>
+        </div> 
+    </div>
+  </body>
+  <script src="/js/input.js"></script>
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      var sidebar = document.querySelector('.sidebar');
+      var innerSidebar = document.querySelector('.inner-sidebar');
+      sidebar.classList.toggle('open');
+      innerSidebar.classList.toggle('open');
+    });
+  </script>
+</html>
